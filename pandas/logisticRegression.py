@@ -125,11 +125,10 @@ training_targets = processedTargets.head(12000)
 validation_targets = processedTargets.tail(5000)
 
 linear_classifier = train_model(
-    learning_rate=0.00001,
-    steps=500,
-    batch_size=100,
+    learning_rate=0.000003,
+    steps=20000,
+    batch_size=500,
     training_examples=training_examples,
     training_targets=training_targets,
     validation_examples=validation_examples,
     validation_targets=validation_targets)
-
